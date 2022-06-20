@@ -8,8 +8,12 @@ header {
   color: white;
 }
 
-.FaBars--icon {
+.nav-icon {
   height: 20px;
   width: 22px;
   cursor: pointer;
+}
+
+header > h1 {
+  margin-top: 18px;
 }

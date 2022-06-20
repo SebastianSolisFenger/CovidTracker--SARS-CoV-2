@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaCog, FaMicrophone } from 'react-icons/fa';
 import './Navbar.css';
 
 export default class Navbar extends React.Component {
@@ -11,8 +11,12 @@ export default class Navbar extends React.Component {
   render = () => (
     <>
       <header>
-        <FaBars className="FaBars--icon" />
-        <h2>Navbar</h2>
+        <FaBars className="nav-icon" />
+        <h2>CovidTracker</h2>
+        <div className="navBar--rightSide">
+          <FaMicrophone className="nav-icon" />
+          <FaCog className="nav-icon" />
+        </div>
       </header>
     </>
   );
