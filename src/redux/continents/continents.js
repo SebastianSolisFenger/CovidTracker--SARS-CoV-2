@@ -1,15 +1,16 @@
 /* eslint-disable no-unused-vars */
 // @ts-nocheck
-// const URL = 'https://corona.lmao.ninja/v3/covid-19/continents';
+
 import continentsInitialData from './initial--data';
+
+const URL = 'https://corona.lmao.ninja/v3/covid-19/continents';
 
 // ACTIONS
 const GET_CONTINENTS_SUCCESS =
-  '/CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
+  'CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
 const GET_CONTINENTS_LOADING =
-  '/CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
-const GET_CONTINENTS_FAILED =
-  '/CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
+  'CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
+const GET_CONTINENTS_FAILED = 'CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
 
 // ACTIONS CREATORS
 
@@ -24,6 +25,20 @@ export const continentsFailed = (msg) => ({
   type: GET_CONTINENTS_FAILED,
   payload: msg,
 });
+
+// FETCHING CONTINENTS API
+export const getContinents = () => (dispatch) => {
+  dispatch(continentsLoading());
+  fetch(URL)
+    .then((response) => response.json())
+    .then((data) => {
+      const newContinents = data.map((conti) => ({ name: conti.continent }));
+      dispatch(continentsSuccess(newContinents));
+    })
+    .catch((errMsg) => {
+      dispatch(continentsFailed(errMsg));
+    });
+};
 
 // CONTINENTS REDUCER
 
