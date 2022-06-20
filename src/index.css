@@ -12,7 +12,9 @@
   --black: #000;
   --primary: #4369b2;
   --cont-bg-1: #4268b1;
-  --cont-bg-2: #5585e1;
+  --cont-bg-2: #3d61a3;
+  --cont-bg-3: #5585e1;
+  --header-bg: #325083;
 }
 
 h1 {

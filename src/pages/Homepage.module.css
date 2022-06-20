@@ -1,0 +1,10 @@
+.headerContinentDeaths {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 4px 18px;
+}
+
+.headerContinentDeaths > h2 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
