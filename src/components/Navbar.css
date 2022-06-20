@@ -1,19 +1,21 @@
 header {
+  background-color: var(--primary);
+  color: white;
+  height: 60px;
   display: flex;
   align-items: center;
+  padding: 0 25px;
   justify-content: space-between;
-  background-color: var(--blue--1);
-  height: 62px;
-  padding: 0 18px;
-  color: white;
+  font-size: 11px;
 }
 
 .nav-icon {
   height: 20px;
-  width: 22px;
+  width: 20px;
   cursor: pointer;
 }
 
-header > h1 {
-  margin-top: 18px;
+.navBar--rightSide {
+  display: flex;
+  gap: 10px;
 }

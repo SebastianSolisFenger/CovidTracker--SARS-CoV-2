@@ -7,4 +7,5 @@
 .headerContinentDeaths > h2 {
   font-size: 0.7rem;
   text-transform: uppercase;
+  text-align: center;
 }

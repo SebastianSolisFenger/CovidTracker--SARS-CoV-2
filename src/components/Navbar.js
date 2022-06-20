@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
     <>
       <header>
         <FaBars className="nav-icon" />
-        <h2>CovidTracker</h2>
+        <h1>CovidTracker</h1>
         <div className="navBar--rightSide">
           <FaMicrophone className="nav-icon" />
           <FaCog className="nav-icon" />
