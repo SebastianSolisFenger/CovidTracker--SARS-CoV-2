@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue--1);
+  height: 62px;
+  padding: 0 18px;
+  color: white;
+}
+
+.FaBars--icon {
+  height: 20px;
+  width: 22px;
+  cursor: pointer;
+}
