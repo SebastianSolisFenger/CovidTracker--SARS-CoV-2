@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-// @ts-nocheck
 import {
   legacy_createStore as createStore,
   combineReducers,
@@ -9,7 +7,10 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import continents from './continents/continents';
 
-const rootReducer = combineReducers({ continents });
+const rootReducer = combineReducers({
+  continents,
+});
 
 const store = createStore(rootReducer, applyMiddleware(logger, thunk));
+
 export default store;

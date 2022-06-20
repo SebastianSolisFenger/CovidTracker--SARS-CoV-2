@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import style from './ContinentWidget.module.css';
 
 const ContinentWidget = (props) => {
@@ -9,18 +9,19 @@ const ContinentWidget = (props) => {
       <img
         className={style.continentImage}
         src={`/images/${name}.png`}
-        alt="ContinentImage"
+        alt={name}
       />
       <div className={style.text}>
-        <h2>{name}</h2>
-        <h3>{deaths}</h3>
+        <h3>{name}</h3>
+        <h4>{deaths}</h4>
       </div>
     </div>
   );
 };
+
 ContinentWidget.propTypes = {
-  name: propTypes.string.isRequired,
-  deaths: propTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  deaths: PropTypes.number.isRequired,
 };
 
 export default ContinentWidget;

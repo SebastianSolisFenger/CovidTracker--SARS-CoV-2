@@ -3,4 +3,5 @@ const continentsInitialData = {
   status: 'LOADING',
   errMsg: null,
 };
+
 export default continentsInitialData;
