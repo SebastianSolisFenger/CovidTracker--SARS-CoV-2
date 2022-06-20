@@ -10,9 +10,9 @@
 :root {
   --white: #fff;
   --black: #000;
-  --blue--1: #4369b2;
-  --blue--2: #4268b1;
-  --blue--3: #5585e1;
+  --primary: #4369b2;
+  --cont-bg-1: #4268b1;
+  --cont-bg-2: #5585e1;
 }
 
 h1 {

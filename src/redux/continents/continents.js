@@ -32,11 +32,14 @@ export const getContinents = () => (dispatch) => {
   fetch(URL)
     .then((response) => response.json())
     .then((data) => {
-      const newContinents = data.map((conti) => ({ name: conti.continent }));
+      const newContinents = data.map((conti) => ({
+        name: conti.continent,
+        deaths: conti.deaths,
+      }));
       dispatch(continentsSuccess(newContinents));
     })
-    .catch((errMsg) => {
-      dispatch(continentsFailed(errMsg));
+    .catch((errorMsg) => {
+      dispatch(continentsFailed(JSON.stringify(errorMsg.message)));
     });
 };
 
@@ -45,11 +48,11 @@ export const getContinents = () => (dispatch) => {
 export default function continents(state = continentsInitialData, action) {
   switch (action.type) {
     case GET_CONTINENTS_LOADING:
-      return { ...state, loading: true };
+      return { ...state, status: 'LOADING' };
     case GET_CONTINENTS_SUCCESS:
-      return { ...state, loading: false, continents: action.payload };
+      return { ...state, status: 'SUCCESS', continents: action.payload };
     case GET_CONTINENTS_FAILED:
-      return { ...state, loading: false, errMsg: action.payload };
+      return { ...state, status: 'FAILED', errMsg: action.payload };
     default:
       return state;
   }

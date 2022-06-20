@@ -1,0 +1,6 @@
+continent {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: var(--cont-bg-1);
+}
