@@ -1,0 +1,36 @@
+.worldContainerStats {
+  display: flex;
+  background-color: var(--cont-bg-3);
+  flex-basis: 50vw;
+}
+
+.worldImgStats {
+  width: 45vw;
+}
+
+.worldInfoStats {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+}
+
+.worldInfoStats > h3 {
+  font-size: 3.2vw;
+  text-transform: uppercase;
+}
+
+.worldInfoStats > h4 {
+  font-size: 2.8vw;
+}
+
+.ThreeDots {
+  margin-left: 5px;
+  width: 4vw;
+  height: 3vw;
+}
+
+.imgWorldContainer {
+  padding: 18px;
+}
