@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaBars, FaCog, FaMicrophone } from 'react-icons/fa';
-import './Navbar.css';
+import style from './Navbar.module.css';
 
 export default class Navbar extends React.Component {
   constructor() {
@@ -11,11 +11,11 @@ export default class Navbar extends React.Component {
   render = () => (
     <>
       <header>
-        <FaBars className="nav-icon" />
+        <FaBars className={style.navIcon} />
         <h1>CovidTracker</h1>
-        <div className="navBar--rightSide">
-          <FaMicrophone className="nav-icon" />
-          <FaCog className="nav-icon" />
+        <div className={style.navBarRightSide}>
+          <FaMicrophone className={style.navIcon} />
+          <FaCog className={style.navIcon} />
         </div>
       </header>
     </>

@@ -30,6 +30,7 @@ export const getContinents = () => (dispatch) => {
       const newContinents = data.map((conti) => ({
         name: conti.continent,
         deaths: conti.deaths,
+        countries: conti.countries,
       }));
       dispatch(continentsSuccess(newContinents));
     })
