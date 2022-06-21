@@ -1,0 +1,26 @@
+.countryBlock {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cont-bg-2);
+  color: white;
+  padding: 25px 20px;
+}
+
+.countryBlock > h3,
+.countryBlock > h2 {
+  margin-bottom: 5px;
+}
+
+/* .ccountryStadistics > h3 {
+  margin-right: 15px;
+} */
+
+.countryBlock:nth-child(even) {
+  background-color: var(--cont-bg-1);
+}
+
+.countryStadistics {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}

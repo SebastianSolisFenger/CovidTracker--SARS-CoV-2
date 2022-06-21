@@ -21,13 +21,13 @@ export const countriesFailed = (msg) => ({
 
 // Fetching data from URL
 
-export const getCountries = () => (dispatch) => {
+export const getCountries = (countriesContinent) => (dispatch) => {
   dispatch(countriesLoading());
-  fetch(URLCOUNTRIES)
+  fetch(URLCOUNTRIES + countriesContinent)
     .then((response) => response.json())
     .then((data) => {
       const newCountries = data.map((country) => ({
-        name: country.name,
+        name: country.country,
         deaths: country.deaths,
       }));
       dispatch(countriesSuccess(newCountries));

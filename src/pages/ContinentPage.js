@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import HeaderCommonWidget from '../components/HeaderCommonWidget';
 import MainTitleBar from '../components/MainTitleBar';
+import Countries from '../components/Countries';
 
 // const URLDWDEATH = '`https://disease.sh/v3/covid-19/continents/${continent}``';
 
@@ -19,7 +20,8 @@ const ContinentPage = () => {
   return (
     <>
       <HeaderCommonWidget location={continent} death={deathData} />
-      <MainTitleBar title="Continent Death" />
+      <MainTitleBar title="Deaths by country" />
+      <Countries location={continent} />
     </>
   );
 };
