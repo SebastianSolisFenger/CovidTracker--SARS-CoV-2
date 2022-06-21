@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Bars } from 'react-loading-icons';
-import { getContinents } from '../redux/continents/continents';
-import ContinentWidget from './ContinentWidget';
-// import style from './Continents.module.css';
+import { getContinents } from '../../redux/continents/continents';
+import ContinentWidget from '../ContinentWidget/ContinentWidget';
+import style from './Continents.module.css';
 
 const Continents = () => {
   const continents = useSelector((state) => state.continents);
@@ -16,19 +16,20 @@ const Continents = () => {
   let content;
   if (continents.status === 'LOADING') {
     content = (
-      <div className="{style.loadingIcon}">
+      <div className="loadingIcon">
         <Bars stroke="var(--primary)" fill="var(--primary)" height="2rem" />
         <h4>Loading...</h4>
       </div>
     );
   } else if (continents.status === 'SUCCESS') {
     content = (
-      <div className="{style.continents}">
+      <div className={style.continents}>
         {continents.continents.map((continent) => (
           <ContinentWidget
             key={continent.name}
             name={continent.name}
             deaths={continent.deaths}
+            countries={continent.countries}
           />
         ))}
       </div>

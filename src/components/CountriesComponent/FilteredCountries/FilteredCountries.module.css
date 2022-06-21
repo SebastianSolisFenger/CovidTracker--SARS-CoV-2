@@ -1,0 +1,46 @@
+.countryBlock {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cont-bg-2);
+  color: white;
+  padding: 25px 20px;
+}
+
+.countryBlock > h3,
+.countryBlock > h2 {
+  margin-bottom: 5px;
+}
+
+/* .ccountryStadistics > h3 {
+  margin-right: 15px;
+} */
+
+.countryBlock:nth-child(even) {
+  background-color: var(--cont-bg-1);
+}
+
+.countryStadistics {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.searchParentContainer {
+  display: flex;
+  padding: 7px 17px;
+}
+
+.rawSearchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  height: 28px;
+  padding-left: 18px;
+  flex-grow: 1;
+}
+
+.rawSearchInput:focus {
+  outline: none;
+}

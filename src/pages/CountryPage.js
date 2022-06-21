@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from '../components/NavBarComponent/Navbar';
 
-const NoMatch = () => (
+const CountryPage = () => (
   <>
     <Navbar />
-    <h2>Nomatch</h2>
+    CountryPage
   </>
 );
 
-export default NoMatch;
+export default CountryPage;
