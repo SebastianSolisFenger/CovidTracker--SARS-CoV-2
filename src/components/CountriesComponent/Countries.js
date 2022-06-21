@@ -6,6 +6,7 @@ import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Bars } from 'react-loading-icons';
 import { getCountries } from '../../redux/countries/countries';
+import FilteredCountries from './FilteredCountries/FilteredCountries';
 import style from './Countries.module.css';
 
 const Countries = (props) => {
@@ -27,21 +28,7 @@ const Countries = (props) => {
       </div>
     );
   } else if (selectedCountries.status === 'SUCCESS') {
-    content = (
-      <div>
-        {selectedCountries.countries.map((selectedOne) => (
-          <div key={selectedOne.name} className={style.countryBlock}>
-            <h2>{selectedOne.name}</h2>
-            <div className={style.countryStadistics}>
-              <h3>{`${selectedOne.deaths}`}</h3>
-              <Link to={`/country/${selectedOne.name}`} type="" button>
-                <FaRegArrowAltCircleRight className="nextArrowIcon" />
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
-    );
+    content = <FilteredCountries />;
   } else {
     content = <h2>Error: {selectedCountries.errMsg}</h2>;
   }
