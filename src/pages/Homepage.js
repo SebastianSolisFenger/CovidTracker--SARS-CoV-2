@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Continents from '../components/ContinentsComponents/Continents';
 import HeaderCommonWidget from '../components/HeaderWidget/HeaderCommonWidget';
 import MainTitleBar from '../components/TitleWidgetBar/MainTitleBar';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavBarComponent/Navbar';
 
 const Homepage = () => {
   const [deathData, setDeathData] = useState(null);

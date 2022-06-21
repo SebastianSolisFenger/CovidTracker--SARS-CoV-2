@@ -24,3 +24,23 @@
   align-items: center;
   padding: 15px;
 }
+
+.searchParentContainer {
+  display: flex;
+  padding: 7px 17px;
+}
+
+.rawSearchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  height: 28px;
+  padding-left: 18px;
+  flex-grow: 1;
+}
+
+.rawSearchInput:focus {
+  outline: none;
+}

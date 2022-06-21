@@ -2,12 +2,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { FaRegArrowAltCircleRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import { Bars } from 'react-loading-icons';
 import { getCountries } from '../../redux/countries/countries';
 import FilteredCountries from './FilteredCountries/FilteredCountries';
-import style from './Countries.module.css';
+import style from './FilteredCountries/FilteredCountries.module.css';
 
 const Countries = (props) => {
   // const continents = useSelector((state) => state.continents.continents);
@@ -28,7 +26,7 @@ const Countries = (props) => {
       </div>
     );
   } else if (selectedCountries.status === 'SUCCESS') {
-    content = <FilteredCountries />;
+    content = <FilteredCountries countries={selectedCountries.countries} />;
   } else {
     content = <h2>Error: {selectedCountries.errMsg}</h2>;
   }

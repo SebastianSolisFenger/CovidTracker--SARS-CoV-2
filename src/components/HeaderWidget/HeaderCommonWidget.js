@@ -32,7 +32,7 @@ const HeaderCommonWidget = (props) => {
 };
 
 HeaderCommonWidget.propTypes = {
-  death: PropTypes.number,
+  death: PropTypes.string,
   location: PropTypes.string.isRequired,
 };
 
