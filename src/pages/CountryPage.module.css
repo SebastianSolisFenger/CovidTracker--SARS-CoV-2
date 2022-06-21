@@ -1,0 +1,8 @@
+.countryHeaderCont {
+  background: url(../../public/images/COVID-19-bg.jpg), right center, no-repeat,
+    #000000;
+  min-height: 218px;
+  padding: 12px;
+  background-size: cover;
+  color: white;
+}

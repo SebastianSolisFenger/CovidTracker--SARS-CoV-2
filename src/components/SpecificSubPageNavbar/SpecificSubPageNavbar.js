@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaAngleLeft, FaCog } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import style from './SpecificCountriesNavbar.module.css';
+import style from './SpecificSubPageNavbar.module.css';
 
-const SpecificCountriesNavbar = () => {
+const SpecificSubPageNavbar = () => {
   const navigate = useNavigate();
 
   return (
@@ -22,4 +22,4 @@ const SpecificCountriesNavbar = () => {
   );
 };
 
-export default SpecificCountriesNavbar;
+export default SpecificSubPageNavbar;
