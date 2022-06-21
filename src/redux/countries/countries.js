@@ -21,16 +21,15 @@ export const countriesFailed = (msg) => ({
 
 // Fetching data from URL
 
-export const getCountries = (countriesContinent) => (dispatch) => {
+export const getCountries = (location) => (dispatch) => {
   dispatch(countriesLoading());
-  fetch(URLCOUNTRIES + countriesContinent)
+  fetch(URLCOUNTRIES)
     .then((response) => response.json())
     .then((data) => {
-      const newCountries = data.map((country) => ({
-        name: country.country,
-        deaths: country.deaths,
-      }));
-      dispatch(countriesSuccess(newCountries));
+      const fetchedCountries = data
+        .filter((conti) => conti.continent === location)
+        .map((ctry) => ({ name: ctry.country, deaths: ctry.deaths }));
+      dispatch(countriesSuccess(fetchedCountries));
     })
     .catch((errMsg) => {
       dispatch(countriesFailed(JSON.stringify(errMsg.message)));

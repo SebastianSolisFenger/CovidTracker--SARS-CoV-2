@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Continents from '../components/Continents';
-import HeaderCommonWidget from '../components/HeaderCommonWidget';
-import MainTitleBar from '../components/MainTitleBar';
+import Continents from '../components/ContinentsComponents/Continents';
+import HeaderCommonWidget from '../components/HeaderWidget/HeaderCommonWidget';
+import MainTitleBar from '../components/TitleWidgetBar/MainTitleBar';
+import Navbar from '../components/Navbar';
 
 const Homepage = () => {
   const [deathData, setDeathData] = useState(null);
@@ -15,6 +16,7 @@ const Homepage = () => {
 
   return (
     <>
+      <Navbar />
       <HeaderCommonWidget death={deathData} location="world" />
       <MainTitleBar title="Continent Death" />
       <Continents />

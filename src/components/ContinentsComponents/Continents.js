@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Bars } from 'react-loading-icons';
-import { getContinents } from '../redux/continents/continents';
-import ContinentWidget from './ContinentWidget';
+import { getContinents } from '../../redux/continents/continents';
+import ContinentWidget from '../ContinentWidget/ContinentWidget';
 import style from './Continents.module.css';
 
 const Continents = () => {

@@ -1,22 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Bars } from 'react-loading-icons';
-import { getCountries } from '../redux/countries/countries';
+import { getCountries } from '../../redux/countries/countries';
 import style from './Countries.module.css';
 
 const Countries = (props) => {
-  const continents = useSelector((state) => state.continents.continents);
+  // const continents = useSelector((state) => state.continents.continents);
   const selectedCountries = useSelector((state) => state.countries);
   const { location } = props;
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const { countries } = continents.find((conti) => conti.name === location);
-    dispatch(getCountries(countries));
+    dispatch(getCountries(location));
   }, []);
 
   let content;
