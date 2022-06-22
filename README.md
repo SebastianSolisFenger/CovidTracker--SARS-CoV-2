@@ -14,7 +14,8 @@
 
 ## Live version
 
-<!-- For the live version of this project visit the following [Netlify] link. -->
+<!-- For the live version of this project visit the followinglink. -->
+ [Netlify](https://62b38c80258ecd00084e97a4--endearing-churros-f26c24.netlify.app/) 
 
 ## Get started
 
