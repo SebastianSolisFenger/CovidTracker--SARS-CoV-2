@@ -4,6 +4,7 @@
   background-color: var(--cont-bg-2);
   color: white;
   padding: 25px 20px;
+  align-items: center;
 }
 
 .countryBlock > h3,

@@ -31,15 +31,15 @@
   font-size: 2.8vw;
 }
 
-.furtherDetailer {
+.furtherDetails {
   position: absolute;
   margin-left: 40vw;
   margin-top: 2vw;
 }
 
 .nextArrowIcon {
-  height: 4vw;
-  width: 4vw;
+  height: 5vw;
+  width: 5vw;
   color: white;
   align-self: end;
 }

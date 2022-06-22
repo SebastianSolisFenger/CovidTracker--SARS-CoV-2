@@ -1,5 +1,3 @@
-/* eslint-disable arrow-body-style */
-
 import { ThreeDots } from 'react-loading-icons';
 import PropTypes from 'prop-types';
 import style from './HeaderCommonWidget.module.css';
@@ -18,7 +16,7 @@ const HeaderCommonWidget = (props) => {
       </div>
 
       <div className={style.worldInfoStats}>
-        <h3>{location} data</h3>
+        <h2>{location}</h2>
         {death ? (
           <h4>{`${death}`} Deaths</h4>
         ) : (
@@ -32,7 +30,7 @@ const HeaderCommonWidget = (props) => {
 };
 
 HeaderCommonWidget.propTypes = {
-  death: PropTypes.string,
+  death: PropTypes.number,
   location: PropTypes.string.isRequired,
 };
 
