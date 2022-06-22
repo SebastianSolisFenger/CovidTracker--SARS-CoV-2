@@ -66,7 +66,4 @@ Give a :star: if you liked the app
 # License
 This project is [MIT](LICENSE.md) licensed.
 
-## Acknowledgments
-Microverse
-React and React Router documentation
-Hats off to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the design inspiration.
+
