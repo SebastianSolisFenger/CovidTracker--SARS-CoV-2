@@ -21,7 +21,7 @@
 ## Live version
 
 <!-- For the live version of this project visit the followinglink. -->
- [Netlify](https://62b390fca1ea8700086ca128--endearing-churros-f26c24.netlify.app/)
+ [Netlify](https://62b39c3500f98100080e64e0--clever-clafoutis-a9f122.netlify.app/)
 
 ## Get started
 
