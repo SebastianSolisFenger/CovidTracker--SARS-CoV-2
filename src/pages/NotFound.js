@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from '../components/NavBarComponent/Navbar';
 
-const NoMatch = () => (
-  <>
+const NotFound = () => (
+  <div>
     <Navbar />
-    <h2>Nomatch</h2>
-  </>
+    NotFound
+  </div>
 );
 
-export default NoMatch;
+export default NotFound;
