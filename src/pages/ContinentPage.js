@@ -5,8 +5,6 @@ import MainTitleBar from '../components/TitleWidgetBar/MainTitleBar';
 import Countries from '../components/CountriesComponent/Countries';
 import SpecificSubPageNavbar from '../components/SpecificSubPageNavbar/SpecificSubPageNavbar';
 
-// const URLDWDEATH = '`https://disease.sh/v3/covid-19/continents/${continent}``';
-
 const ContinentPage = () => {
   const { continent } = useParams();
   const [deathData, setDeathData] = useState(null);

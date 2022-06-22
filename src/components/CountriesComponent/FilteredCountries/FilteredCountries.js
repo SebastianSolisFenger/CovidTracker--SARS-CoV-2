@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';

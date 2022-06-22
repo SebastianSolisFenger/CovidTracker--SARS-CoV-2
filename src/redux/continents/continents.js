@@ -2,14 +2,12 @@ import continentsInitialData from './initial-data';
 
 const URL = 'https://corona.lmao.ninja/v3/covid-19/continents';
 
-// Actions
 const GET_CONTINENTS_SUCCESS =
   'CovidTracker--SARS-CoV-2/GET_CONTINENTS_SUCCESS';
 const GET_CONTINENTS_LOADING =
   'CovidTracker--SARS-CoV-2/GET_CONTINENTS_LOADING';
 const GET_CONTINENTS_FAILED = 'CovidTracker--SARS-CoV-2/GET_CONTINENTS_FAILED';
 
-// Action creators
 export const continentsSuccess = (continents) => ({
   type: GET_CONTINENTS_SUCCESS,
   payload: continents,
@@ -19,8 +17,6 @@ export const continentsFailed = (msg) => ({
   type: GET_CONTINENTS_FAILED,
   payload: msg,
 });
-
-// Fetching data from URL
 
 export const getContinents = () => (dispatch) => {
   dispatch(continentsLoading());
@@ -38,8 +34,6 @@ export const getContinents = () => (dispatch) => {
       dispatch(continentsFailed(JSON.stringify(err.message)));
     });
 };
-
-// continents reducer
 
 export default function continents(state = continentsInitialData, action) {
   switch (action.type) {
