@@ -59,27 +59,27 @@ const CountryPage = () => {
               <h3>{countryDetails.oneTestPerPeople}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>TestsPerOneMillion:</h3>
+              <h3>Tests per one million:</h3>
               <h3>{countryDetails.testsPerOneMillion}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>OneDeathPerPeoples:</h3>
+              <h3>One death per peoples:</h3>
               <h3>{countryDetails.oneDeathPerPeople}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>OneCasePerPeople:</h3>
+              <h3>One case per people:</h3>
               <h3>{countryDetails.oneCasePerPeople}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>ActivePerOneMillion:</h3>
+              <h3>Active per one million:</h3>
               <h3>{countryDetails.activePerOneMillion}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>CriticalPerOneMillion:</h3>
+              <h3>Critical per one million:</h3>
               <h3>{countryDetails.criticalPerOneMillion}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>RecoveredPerOneMillion:</h3>
+              <h3>Recovered per one million:</h3>
               <h3>{countryDetails.recoveredPerOneMillion}</h3>
             </div>
           </div>
