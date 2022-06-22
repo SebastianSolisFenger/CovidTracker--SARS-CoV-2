@@ -17,7 +17,11 @@ const routes = [
     element: <CountryPage />,
     exact: 'true',
   },
-  { path: '*', title: '', element: <NoMatch /> },
+  {
+    path: '*',
+    title: '',
+    element: <NoMatch />,
+  },
 ];
 
 export default routes;
