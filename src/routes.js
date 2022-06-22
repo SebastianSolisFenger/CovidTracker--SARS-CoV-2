@@ -4,6 +4,11 @@ import CountryPage from './pages/CountryPage';
 import NoMatch from './pages/NoMatch';
 
 const routes = [
+  {
+    path: '*',
+    title: '',
+    element: <NoMatch />,
+  },
   { path: '/', title: 'Homepage', element: <Homepage />, exact: 'true' },
   {
     path: '/continent/:continent',
@@ -16,11 +21,6 @@ const routes = [
     title: 'Country',
     element: <CountryPage />,
     exact: 'true',
-  },
-  {
-    path: '*',
-    title: '',
-    element: <NoMatch />,
   },
 ];
 
