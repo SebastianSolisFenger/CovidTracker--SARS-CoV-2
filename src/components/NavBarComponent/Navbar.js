@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <header>
         <FaBars className={style.navIcon} />
-        <h1>CovidTracker</h1>
+        <h1>Covid Tracker-SARS-2</h1>
         <div className={style.navBarRightSide}>
           <FaRegSun className={style.navIcon} />
         </div>

@@ -26,7 +26,7 @@ const CountryPage = () => {
                 className={style.countryFlagImg}
                 alt={countryDetails.country}
               />
-              <h2>{countryDetails.country}</h2>
+              <h2 className={style.titleCountry}>{countryDetails.country}</h2>
             </div>
           </div>
           <div>
@@ -55,7 +55,7 @@ const CountryPage = () => {
               <h3>{countryDetails.tests}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>OneTestPerPeoples:</h3>
+              <h3>OneTestPerPeople:</h3>
               <h3>{countryDetails.oneTestPerPeople}</h3>
             </div>
             <div className={style.infoCountryListing}>

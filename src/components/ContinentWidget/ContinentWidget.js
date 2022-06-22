@@ -17,7 +17,11 @@ const ContinentWidget = (props) => {
         <h3>{name}</h3>
         <h4>{deaths}</h4>
       </div>
-      <Link to={`/continent/${name}`} type="button" className="furtherDetails">
+      <Link
+        to={`/continent/${name}`}
+        type="button"
+        className={style.furtherDetails}
+      >
         <FaRegArrowAltCircleRight className={style.nextArrowIcon} />
       </Link>
     </div>

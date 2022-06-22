@@ -16,6 +16,7 @@
 
 .countryFlagImg {
   border-radius: 10px;
+  border: 3px solid white;
 }
 
 .infoCountryListing {
@@ -28,4 +29,13 @@
 
 .infoCountryListing:nth-child(even) {
   background-color: var(--cont-bg-2);
+}
+
+.titleCountry {
+  padding: 7px;
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-top: 5px;
+  background-color: #4268b1;
+  font-size: 5vw;
 }
