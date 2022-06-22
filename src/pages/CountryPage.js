@@ -34,7 +34,7 @@ const CountryPage = () => {
               <h3>{countryDetails.population}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>Cases Detected:</h3>
+              <h3>Cases detected:</h3>
               <h3>{countryDetails.cases}</h3>
             </div>
             <div className={style.infoCountryListing}>
@@ -54,7 +54,7 @@ const CountryPage = () => {
               <h3>{countryDetails.tests}</h3>
             </div>
             <div className={style.infoCountryListing}>
-              <h3>One Test Per People:</h3>
+              <h3>One test per people:</h3>
               <h3>{countryDetails.oneTestPerPeople}</h3>
             </div>
             <div className={style.infoCountryListing}>
