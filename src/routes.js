@@ -1,7 +1,7 @@
 import Homepage from './pages/Homepage';
 import ContinentPage from './pages/ContinentPage';
 import CountryPage from './pages/CountryPage';
-import NoMatch from './pages/NoMatch';
+import NoMatch from './pages/NoMatch.js';
 
 const routes = [
   { path: '/', title: 'Homepage', element: <Homepage />, exact: 'true' },
