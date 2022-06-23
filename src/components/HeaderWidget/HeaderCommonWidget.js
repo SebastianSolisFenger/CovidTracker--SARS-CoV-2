@@ -29,7 +29,7 @@ const HeaderCommonWidget = (props) => {
     <div className={style.worldContainerStats}>
       <div className={style.imgWorldContainer}>
         <Globe
-          globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+          globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
           arcsData={arcsData}
           backgroundColor="#0000"
           height={300}
