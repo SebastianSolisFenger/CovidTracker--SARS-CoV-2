@@ -1,8 +1,10 @@
 .worldContainerStats {
   display: flex;
-  background-color: var(--cont-bg-3);
+  background: url(../../../public/images/COVID-19-bg.jpg), right center,
+    no-repeat, #000;
   flex-basis: 30vw;
   min-height: 41vw;
+  background-size: cover;
   padding: 20px;
   align-items: center;
 }
@@ -17,6 +19,12 @@
   flex-direction: column;
   justify-content: center;
   padding: 12px;
+  padding: 7px;
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-top: 5px;
+  background-color: #4268b1;
+  font-size: 5vw;
 }
 
 .worldInfoStats > h2 {
