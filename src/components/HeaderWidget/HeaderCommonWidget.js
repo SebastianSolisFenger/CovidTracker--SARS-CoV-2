@@ -18,6 +18,13 @@ const HeaderCommonWidget = (props) => {
     ],
   }));
 
+  // const styleMax = {
+  //   // Adding media query..
+  //   '@media (max-width: 500px)': {
+  //     display: 'none',
+  //   },
+  // };
+
   return (
     <div className={style.worldContainerStats}>
       <div className={style.imgWorldContainer}>
@@ -25,8 +32,8 @@ const HeaderCommonWidget = (props) => {
           globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
           arcsData={arcsData}
           backgroundColor="#0000"
-          height={400}
-          width={400}
+          height={300}
+          width={500}
           arcColor="color"
           arcDashLength={() => Math.random()}
           arcDashGap={() => Math.random()}

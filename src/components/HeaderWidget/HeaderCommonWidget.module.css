@@ -1,13 +1,15 @@
 .worldContainerStats {
   display: flex;
   background-color: var(--cont-bg-3);
-  /* flex-basis: 30vw; */
-  height: 32vw;
+  flex-basis: 30vw;
+  min-height: 41vw;
+  padding: 20px;
+  align-items: center;
 }
 
-/* .worldImgStats {
+.worldImgStats {
   width: 7vw;
-} */
+}
 
 .worldInfoStats {
   color: white;
@@ -36,5 +38,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 18px;
+  padding: 5px 5px;
+  width: 40vw;
+  /* max-height: 15vh; */
+  margin-right: 20px;
+  height: 40vh;
 }
+
+/* .globe {
+  height: 20px;
+} */
