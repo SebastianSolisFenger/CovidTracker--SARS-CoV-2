@@ -10,7 +10,8 @@
 
 
 ## Screenshot
-![FireShot Capture 006 - Multi Device Website Mockup Generator - techsini com](https://user-images.githubusercontent.com/88522494/175396425-2d3c144e-d4f7-4417-9580-7ab24ef85ed9.png)
+![FireShot Capture 007 - Multi Device Website Mockup Generator - techsini com](https://user-images.githubusercontent.com/88522494/175404364-2bf85cbe-29ee-4624-9b4a-fe8433a80533.png)
+
 </p>
 
 ## Live version
