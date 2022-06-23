@@ -1,13 +1,13 @@
 .worldContainerStats {
   display: flex;
   background-color: var(--cont-bg-3);
-  flex-basis: 50vw;
+  /* flex-basis: 30vw; */
   height: 32vw;
 }
 
-.worldImgStats {
-  width: 27vw;
-}
+/* .worldImgStats {
+  width: 7vw;
+} */
 
 .worldInfoStats {
   color: white;
