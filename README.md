@@ -17,7 +17,7 @@
 ## Live version
 
 <!-- For the live version of this project visit the followinglink. -->
- [Netlify](https://62b4d7476fb55300080066a7--endearing-churros-f26c24.netlify.app/)
+ [Netlify](https://covid-19-statstracky.netlify.app/)
 
 ## Get started
 
